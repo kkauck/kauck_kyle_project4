@@ -1,0 +1,282 @@
+/*
+Kyle Kauck
+Project Three
+VFW 1304
+April 22, 2013
+*/
+
+
+/* Decalring a font face to use for my headers */
+@font-face {
+    font-family: "Scada";
+    src: url(http://fonts.googleapis.com/css?family=Scada);
+}
+
+@font-face {
+    font-family: "Tauri";
+    src: url(http://fonts.googleapis.com/css?family=Tauri);
+}
+
+
+/* HTML Tag Styling */
+html, body, form, fieldset, legend {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #e8ebef;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    display: block;
+    font-family: "Scada", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(../img/headerbg.gif);
+    background-color: #091b77;
+    border-bottom: solid 1px #282d6d;  
+    margin-top: auto;
+    padding: 5px;
+    width: 100%;
+}
+
+h2 {
+    display: block;
+    font-family: "Tauri", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+fieldset {
+    background-color: #f8f7f7;
+    border: 1px solid rgba(9,17,80,0.56);
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+legend {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: #091150;
+    text-shadow: 0px 0px 8px rgba(9,17,80,0.4);
+}
+
+p {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+small {
+    display: inline;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 10px;
+}
+
+span {
+    display: block;
+    font-size: 12px;
+    line-height: 120%;
+    background: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 290px;
+}
+
+input {
+    box-shadow: 0px 0px 8px rgba(9,17,80,0.4);
+    border: solid 1px black;
+}
+
+input:focus {
+    border: solid 1px #429bb8;
+}
+
+.container {
+	width: 100%;
+	margin: 5px auto;
+}
+
+.warning {
+	background-color: rgba(245,16,16,0.2);
+    border: 2px solid red;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#warningSystem {
+	display: none;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: rgba(245,16,16,0.2);
+    border: 2px solid red;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    padding: 10px 10px;
+}
+
+#errorMessages {
+	color: #272727;
+	background-color: rgba(245,16,16,0);
+	margin-right: 0px;
+    margin-bottom: 3px;
+    padding-left: 0px;
+}
+
+/* Link/Button Styling */
+a:link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #f5f6f6;
+    background-color: #23345f;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(9,17,80,0.4);
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 12.5px;
+    width: 122.5px;
+}
+
+a:visited {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #f5f6f6;
+    background-color: #23345f;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(9,17,80,0.4);
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 12.5px;
+    width: 122.5px;
+}
+
+#submitButton {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5f6f6;
+    border-radius: 15px;
+    background-color: #23345f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    height: 45px;
+    width: 200px;
+}
+
+
+/* Title of Form Styling */
+#formHeader {
+    display: block;
+    font-family: "Scada", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(../img/headerbg.gif);
+    border-bottom: solid 1px #282d6d;  
+    margin-top: -5px;
+    padding: 5px;
+}
+
+
+/* Form Field Styling */
+#gameTitle {
+    display: block;
+    width: 290px;
+    height: 20px;
+}
+
+#consoles {
+    display: block;
+    width: 300px;
+    height: 20px;
+}
+
+#genre {
+    display: block;
+    width: 290px;
+    height: 20px;
+}
+
+#dateAdded {
+    display: block;
+    width: 290px;
+    height: 20px;
+}
+
+#rating {
+    display: block;
+    width: 290px;
+    height: 20px;
+}
+
+#download {
+    display: block;
+    width: 290px;
+    height: 20px;
+}
+
+textarea {
+    display: block;
+    box-shadow: 0px 0px 8px rgba(9,17,80,0.4);
+    width: 290px;
+    height: 150px;
+    border: solid 1px black;
+}
+
+textarea:focus {
+    border: solid 1px #429bb8;
+}
+
+
+/* Display of Form Information Styling */
+#gameListInfo {
+	border-bottom: 1px solid rgba(9,17,80,0.56);
+	border-right: 1px solid rgba(9,17,80,0.56);
+	border-left: 1px solid rgba(9,17,80,0.56);
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 310px;
+}
+
+#gameInfoList:last-child {
+    border-bottom: 1px solid rgba(9,17,80,0.56);
+    padding-bottom: 10px;
+}
+
+#gameInfoList:first-child {
+    font-family: "Tauri", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: #082863;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#createdButton {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 5px;
+	width: 100px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+Kyle Kauck
+Project Three
+VFW 1304
+April 22, 2013
+-->
+
+<html>
+    <head>
+    <!-- Meta declarations for additem.html as well as title for the page -->
+        <meta charset="utf-8" /> 
+        <meta name="robots" content="index,follow" />
+        <meta name="keywords" content="Games,Video Games,Tracking,Catalogue" />
+        <meta name="author" content="Kyle Kauck" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="description" content="This is the form to store your Game Collection data." />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <title>Game Tracker - Add A Game</title>
+    </head>
+    <body>
+    <div class="container">
+        <header>
+            <h1 id="formHeader">Game Tracker</h1>
+        </header>
+        <!-- Creating the form used for this page -->
+        <div class="formContainer">
+        <form action="#" method="post" id="addGameForm">
+            <fieldset>
+                <legend><strong>Add A Game</strong></legend>
+           	<!-- Game Titles Text -->
+                    <label for="denote"><p id="denote">* Denotes A Required Field</p></label>
+                    <div id="warningMessage">
+	                    <p id="warningSystem"><br /></p>
+                    </div>
+                    <div id="titleError">
+                    	<p><label for="gameTitle">* Game Title: </label><input type="text" id="gameTitle" /></p>
+                    </div>
+                    <!-- Select and Options for Console Selections -->
+                    <div id="consoleError">
+                    	<p id="selectConsole"><label for="console">* Console: </label><br /></p>
+                    </div>
+                    <!-- Game Genre Text -->
+                    <div id="genreError">
+                    	<p><label for="genre">* Genre: </label><input type="text" id="genre"  /></p>
+                    </div>
+                    <!-- Date for when you added the game to the form -->
+                    <div id="dateError">
+                    	<p><label for="dateAdded">* Date Added: </label><input type="date" id="dateAdded"  /></p>
+                    </div>
+                    <!-- Radio boxes for if the game have multiplayer -->
+                    <div id="multiplayerError">
+                    	<p>* Multiplayer Functionality:<br />
+	                    <input type="radio" name="multiplayer" id="yes" value="Yes" /><label for="yes">Yes</label><br />
+	                    <input type="radio" name="multiplayer" id="no" value="No" /><label for="no">No</label></p>
+                    </div>
+                    <!-- A range for the rating you give to the game -->
+	                <div id="ratingError">
+                    	<p><label for="rating">Your Rating: </label><input type="range" id="rating" min="0" max="10" /></p>
+	                </div>
+                    <!-- Text box for download size of the game if applicable to the game -->
+                    <p><label for="download">Download Size (If Applicable): </label><input type="text" id="download" /></p>
+                    <!-- Text area for extra information about the game -->
+                    <p><label for="addInformation">Additional Information: </label><textarea rows="4" cols="50" id="addInformation" placeholder="Please enter any additional information here..."></textarea></p>
+                    <label for="forminfo"></label><input type="hidden" name="forminfo" id="forminfo" value="From Add A Game Form"  />
+                    <label for="submitButton"></label><input type="button" id="submitButton" value="Submit my game!" />
+            </fieldset>
+        </form>
+        <div id ="gameInfoDisplay"></div>
+        <nav>
+            <a href="#" id="clearData">Clear Stored Data</a>
+            <a href="#" id="displayData">Display Data</a>
+            <a href="additem.html" id="addNewGame" style="display:none;">Add New Game</a>
+        </nav>
+        <footer>
+            <p id="thankYou"><small>Thank you for choosing Game Tracker! For all of your game catalogue needs!</small></p>
+        </footer>
+        <script src="js/main.js" language="javascript" type="text/javascript"></script>
+    </body>
+</html>
