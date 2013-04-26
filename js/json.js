@@ -1,3 +1,11 @@
+/*
+Kyle Kauck
+Project Four
+VFW 1304
+April 26, 2013
+*/
+
+
 var gamingData = {
 	"xbox360": {
 		"gameTitle": ["<strong>Game Title:</strong> ", "Halo 4"],

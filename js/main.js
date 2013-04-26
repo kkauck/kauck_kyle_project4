@@ -1,8 +1,8 @@
 /*
 Kyle Kauck
-Project Three
+Project Four
 VFW 1304
-April 22, 2013
+April 26, 2013
 */
 
 window.addEventListener("DOMContentLoaded", function (){
@@ -119,6 +119,48 @@ window.addEventListener("DOMContentLoaded", function (){
 	    	gameList.appendChild(imageHTML);
 	    	var imageTag = document.createElement("img");
 	    	var imageSource = imageTag.setAttribute("src", "img/playstationThree.gif");
+	    	imageHTML.appendChild(imageTag);
+	    } else if (consoleValue === "Wii U") {
+		  	var imageHTML = document.createElement("span");
+	    	imageHTML.setAttribute("id", "gameImage")
+	    	gameList.appendChild(imageHTML);
+	    	var imageTag = document.createElement("img");
+	    	var imageSource = imageTag.setAttribute("src", "img/wiiU.gif");
+	    	imageHTML.appendChild(imageTag);  
+	    } else if (consoleValue === "PC") {
+		    var imageHTML = document.createElement("span");
+	    	imageHTML.setAttribute("id", "gameImage")
+	    	gameList.appendChild(imageHTML);
+	    	var imageTag = document.createElement("img");
+	    	var imageSource = imageTag.setAttribute("src", "img/pc.gif");
+	    	imageHTML.appendChild(imageTag);
+	    } else if (consoleValue === "Playstation Vita") {
+		    var imageHTML = document.createElement("span");
+	    	imageHTML.setAttribute("id", "gameImage")
+	    	gameList.appendChild(imageHTML);
+	    	var imageTag = document.createElement("img");
+	    	var imageSource = imageTag.setAttribute("src", "img/playstationVita.gif");
+	    	imageHTML.appendChild(imageTag);
+	    } else if (consoleValue === "Nintendo 3DS") {
+		    var imageHTML = document.createElement("span");
+	    	imageHTML.setAttribute("id", "gameImage")
+	    	gameList.appendChild(imageHTML);
+	    	var imageTag = document.createElement("img");
+	    	var imageSource = imageTag.setAttribute("src", "img/nintendo3DS.gif");
+	    	imageHTML.appendChild(imageTag);
+	    } else if (consoleValue === "iPhone/iPad") {
+		    var imageHTML = document.createElement("span");
+	    	imageHTML.setAttribute("id", "gameImage")
+	    	gameList.appendChild(imageHTML);
+	    	var imageTag = document.createElement("img");
+	    	var imageSource = imageTag.setAttribute("src", "img/iphone.gif");
+	    	imageHTML.appendChild(imageTag);
+	    } else if (consoleValue === "Android") {
+		    var imageHTML = document.createElement("span");
+	    	imageHTML.setAttribute("id", "gameImage")
+	    	gameList.appendChild(imageHTML);
+	    	var imageTag = document.createElement("img");
+	    	var imageSource = imageTag.setAttribute("src", "img/android.gif");
 	    	imageHTML.appendChild(imageTag);
 	    }
     }
