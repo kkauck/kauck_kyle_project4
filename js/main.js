@@ -67,7 +67,11 @@ window.addEventListener("DOMContentLoaded", function (){
    
     //Function to display data - Created a paragraph to append to my empty div tag on the html page, which then has a span appended to it 		every time the function loops and adds another element to the html.
     function dataFetch(){
-    	formDisplay("on")
+    	formDisplay("on");
+    	if(localStorage.length === 0){
+	    	alert("You currently have no data in local storage, game data will be automatically added");
+	    	addGameData();
+    	}
 		var createInfo = document.getElementById("gameInfoDisplay");
 		for (var e = 0, f = localStorage.length; e < f; e++) {
 		    var gameKey = localStorage.key(e);
@@ -78,6 +82,7 @@ window.addEventListener("DOMContentLoaded", function (){
 			createInfo.appendChild(gameList);
 			var listButtons = document.createElement("span");
 			listButtons.setAttribute("id", "listButtons");
+			imageAddition(gameInfoObject.console[1], gameList);
             for (var g in gameInfoObject) {
 				var createGameList = document.createElement("span");
                 createGameList.setAttribute("id", "gameInfoList");
@@ -88,6 +93,34 @@ window.addEventListener("DOMContentLoaded", function (){
             }
             createButtons(localStorage.key(e), listButtons);
 		}
+    }
+    
+    //This function will automatically display data if there is none in local storage
+    function addGameData(){
+	    for (var r in gamingData){
+		    var idGenerator = Math.floor(Math.random()*1000000000);
+		    localStorage.setItem(idGenerator, JSON.stringify(gamingData[r]));
+	    }
+    }
+    
+    //This function will add an image into my display
+    function imageAddition(consoleValue, gameList){
+	    
+	    if(consoleValue === "Xbox 360"){
+	    	var imageHTML = document.createElement("span");
+	    	imageHTML.setAttribute("id", "gameImage")
+	    	gameList.appendChild(imageHTML);
+	    	var imageTag = document.createElement("img");
+	    	var imageSource = imageTag.setAttribute("src", "img/xbox360.gif");
+	    	imageHTML.appendChild(imageTag);
+	    } else if (consoleValue === "Playstation 3") {
+	    	var imageHTML = document.createElement("span");
+	    	imageHTML.setAttribute("id", "gameImage")
+	    	gameList.appendChild(imageHTML);
+	    	var imageTag = document.createElement("img");
+	    	var imageSource = imageTag.setAttribute("src", "img/playstationThree.gif");
+	    	imageHTML.appendChild(imageTag);
+	    }
     }
     
     //Function that created my buttons to edit and delete specific items in the application.

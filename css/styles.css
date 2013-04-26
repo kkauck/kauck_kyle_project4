@@ -248,6 +248,13 @@ textarea:focus {
 
 
 /* Display of Form Information Styling */
+#gameImage {
+	text-align: center;
+	border-top: 1px solid rgba(9,17,80,0.56);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 #gameListInfo {
 	border-bottom: 1px solid rgba(9,17,80,0.56);
 	border-right: 1px solid rgba(9,17,80,0.56);
