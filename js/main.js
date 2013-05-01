@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", function (){
         }
         valueOfMultiplayer();
         var gameLibrary = {
-            gameTitle  :["", idGrabber("gameTitle").value],
+            gameTitle  :["<strong>Game Title:</strong> ", idGrabber("gameTitle").value],
             console    :["<strong>Console:</strong> ", idGrabber("consoles").value],
             genre      :["<strong>Genre:</strong> ", idGrabber("genre").value],
             dateAdded  :["<strong>Date Added:</strong> ", idGrabber("dateAdded").value],
@@ -195,6 +195,7 @@ window.addEventListener("DOMContentLoaded", function (){
 	    idGrabber("consoles").value = gameLibrary.console[1];
 	    idGrabber("genre").value = gameLibrary.genre[1];
 	    idGrabber("dateAdded").value = gameLibrary.dateAdded[1];
+	    idGrabber("output").innerHTML = gameLibrary.rating[1];
 	    idGrabber("rating").value = gameLibrary.rating[1];
 	    var multiplayer = document.getElementById("addGameForm").multiplayer;
         for (var c = 0, d = multiplayer.length; c < d; c++) {
